@@ -13,7 +13,10 @@
   to = "/.netlify/functions/:splat"
   status = 200
 
-[[redirects]]
+# SPA fallback: only needed in production (Vite handles history fallback in dev)
+[context.production]
+
+[[context.production.redirects]]
   from = "/*"
   to = "/index.html"
   status = 200

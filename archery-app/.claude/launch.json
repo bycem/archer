@@ -1,0 +1,11 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    {
+      "name": "archery-app",
+      "runtimeExecutable": "node_modules/.bin/netlify",
+      "runtimeArgs": ["dev", "--no-open"],
+      "port": 8888
+    }
+  ]
+}

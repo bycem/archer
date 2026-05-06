@@ -1,9 +1,17 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 import { useAuth } from '../store/authStore';
 import GoogleIcon from '../components/GoogleIcon';
 
 export default function Login() {
-  const { signInWithGoogle, signInWithEmail } = useAuth();
+  const { signInWithGoogle, signInWithEmail, session, initialized } = useAuth();
+  const navigate = useNavigate();
+
+  useEffect(() => {
+    if (initialized && session) {
+      navigate('/', { replace: true });
+    }
+  }, [initialized, session, navigate]);
   const [email, setEmail] = useState('admin@archery.test');
   const [password, setPassword] = useState('password123');
   const [err, setErr] = useState<string | null>(null);
