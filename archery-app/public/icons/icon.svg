@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+  <rect width="512" height="512" fill="#1e293b"/>
+  <g transform="translate(256 256)">
+    <!-- Target rings -->
+    <circle r="200" fill="#FFFFFF" stroke="#212121" stroke-width="2"/>
+    <circle r="160" fill="#212121"/>
+    <circle r="120" fill="#2196F3"/>
+    <circle r="80" fill="#F44336"/>
+    <circle r="40" fill="#FFEB3B"/>
+    <circle r="14" fill="#FFEB3B" stroke="#212121" stroke-width="2"/>
+    <!-- Arrow -->
+    <g transform="rotate(-30)">
+      <line x1="-220" y1="0" x2="220" y2="0" stroke="#0f172a" stroke-width="14" stroke-linecap="round"/>
+      <polygon points="220,0 200,-14 240,0 200,14" fill="#0f172a"/>
+      <polygon points="-220,0 -200,-12 -200,12" fill="#dc2626"/>
+      <polygon points="-210,0 -190,-10 -190,10" fill="#facc15"/>
+    </g>
+  </g>
+</svg>

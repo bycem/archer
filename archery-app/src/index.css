@@ -1,0 +1,74 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    font-family: system-ui, 'Segoe UI', Roboto, sans-serif;
+  }
+  body {
+    @apply bg-white text-slate-900 antialiased;
+    margin: 0;
+    overscroll-behavior-y: contain;
+  }
+  * {
+    -webkit-tap-highlight-color: transparent;
+  }
+  input,
+  select,
+  textarea {
+    font-size: 16px;
+  }
+  button,
+  [role='button'],
+  a.btn {
+    min-height: 44px;
+    min-width: 44px;
+  }
+  .no-select {
+    user-select: none;
+    -webkit-user-select: none;
+  }
+}
+
+@layer components {
+  .input {
+    @apply w-full rounded-md border border-slate-300 bg-white px-3 py-2 text-sm shadow-sm focus:border-slate-500 focus:outline-none focus:ring-1 focus:ring-slate-500;
+  }
+}
+
+@layer utilities {
+  .safe-top {
+    padding-top: max(env(safe-area-inset-top), 1rem);
+  }
+  .safe-bottom {
+    padding-bottom: max(env(safe-area-inset-bottom), 1rem);
+  }
+}
+
+.scoreboard th.sticky-col,
+.scoreboard td.sticky-col {
+  position: sticky;
+  left: 0;
+  background: inherit;
+  z-index: 1;
+}
+.scoreboard thead th.sticky-col {
+  background: #f1f5f9;
+  z-index: 2;
+}
+.scoreboard tbody tr td.sticky-col {
+  background: #ffffff;
+}
+.scoreboard tbody tr.bg-amber-50 td.sticky-col {
+  background: #fffbeb;
+}
+.scoreboard tbody tr.bg-slate-100 td.sticky-col {
+  background: #f1f5f9;
+}
+.scoreboard tbody tr.bg-orange-50 td.sticky-col {
+  background: #fff7ed;
+}
+.scoreboard tbody tr.bg-blue-50 td.sticky-col {
+  background: #eff6ff;
+}
