@@ -197,12 +197,12 @@ E2E için `tests/fixtures/seed-test-db.sql` — her run öncesi DB'yi reset eder
 
 ## Kabul Kriterleri
 
-- [ ] `npm test` tüm unit test'leri çalıştırıyor
-- [ ] Coverage raporu üretiliyor
-- [ ] Sıralama (tie-break) tüm edge case'leri test ediliyor
-- [ ] Hedef tipi → puan eşleme test ediliyor
-- [ ] Playwright kritik akışları test ediyor
-- [ ] CI'da unit testler her PR'da çalışıyor
+- [x] `npm test` tüm unit test'leri çalıştırıyor
+- [x] Coverage raporu üretiliyor
+- [x] Sıralama (tie-break) tüm edge case'leri test ediliyor
+- [x] Hedef tipi → puan eşleme test ediliyor
+- [x] Playwright kritik akışları test ediyor
+- [x] CI'da unit testler her PR'da çalışıyor
 
 ## Bağımlılık
 - Task 01, Task 13, Task 15
