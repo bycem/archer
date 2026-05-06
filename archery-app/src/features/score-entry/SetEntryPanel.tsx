@@ -11,14 +11,14 @@ import {
 } from '../../lib/archery/scoring';
 import { getTargetDef } from '../../lib/archery/targets';
 import type { TargetType } from '../../lib/archery/constants';
+import { storage } from '../../lib/storage';
 
 type EntryMode = 'numeric' | 'visual';
 
 const MODE_KEY = 'scoreMode';
 
 function readInitialMode(): EntryMode {
-  if (typeof window === 'undefined') return 'numeric';
-  const v = window.localStorage.getItem(MODE_KEY);
+  const v = storage.get(MODE_KEY);
   return v === 'visual' ? 'visual' : 'numeric';
 }
 
@@ -57,9 +57,7 @@ export function SetEntryPanel({
   }, [mode, visualSupported]);
 
   useEffect(() => {
-    if (typeof window !== 'undefined') {
-      window.localStorage.setItem(MODE_KEY, mode);
-    }
+    storage.set(MODE_KEY, mode);
   }, [mode]);
 
   useEffect(() => {

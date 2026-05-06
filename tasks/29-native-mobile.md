@@ -130,11 +130,11 @@ if (isNative()) {
 
 Capacitor'a geçişi kolaylaştırmak için:
 
-- [ ] Tüm `localStorage` kullanımları soyutlanmalı (`storage.ts`)
-- [ ] Environment URL (Supabase) `import.meta.env`'den geliyor — taşınabilir
+- [x] Tüm `localStorage` kullanımları soyutlanmalı (`storage.ts`)
+- [x] Environment URL (Supabase) `import.meta.env`'den geliyor — taşınabilir
 - [ ] Deep link şeması test edilebilir (URL'ler universal link'lere uyumlu)
 - [ ] Auth flow OAuth redirect URI native için ayrı tutulmalı (`com.example.archery://auth/callback`)
-- [ ] Camera/QR fonksiyonları interface arkasına alınmalı:
+- [x] Camera/QR fonksiyonları interface arkasına alınmalı:
   ```ts
   interface QrScanner {
     scan(): Promise<string>;

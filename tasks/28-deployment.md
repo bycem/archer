@@ -172,7 +172,7 @@ supabase db push --linked
 - [ ] Custom domain SSL ile çalışıyor
 - [ ] Functions production'da çalışıyor
 - [ ] Service role key client'a sızmıyor (build output kontrolü)
-- [ ] HSTS ve security header'ları aktif
+- [x] HSTS ve security header'ları aktif
 - [ ] Migration'lar production'a sorunsuz uygulanıyor
 
 ## Bağımlılık

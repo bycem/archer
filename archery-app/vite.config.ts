@@ -4,6 +4,21 @@ import { VitePWA } from 'vite-plugin-pwa'
 
 // https://vite.dev/config/
 export default defineConfig({
+  build: {
+    chunkSizeWarningLimit: 1000,
+    rollupOptions: {
+      output: {
+        manualChunks(id) {
+          if (id.includes('node_modules')) {
+            if (id.includes('react') || id.includes('react-dom') || id.includes('react-router-dom')) return 'vendor';
+            if (id.includes('@supabase')) return 'supabase';
+            if (id.includes('recharts')) return 'charts';
+            if (id.includes('xlsx')) return 'excel';
+          }
+        },
+      },
+    },
+  },
   plugins: [
     react(),
     VitePWA({

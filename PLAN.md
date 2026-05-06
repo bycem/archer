@@ -83,8 +83,8 @@ Okçuluk kulüpleri ve federasyonlar için turnuva düzenleme, canlı puan takib
 | 25 | ✅ | Mobil Uyumluluk & PWA | [tasks/25-mobile-pwa.md](tasks/25-mobile-pwa.md) |
 | 26 | ✅ | Local Geliştirme Ortamı | [tasks/26-local-dev.md](tasks/26-local-dev.md) |
 | 27 | ✅ | Test (Unit + E2E) | [tasks/27-testing.md](tasks/27-testing.md) |
-| 28 | ⬜ | Netlify Deploy & CI/CD | [tasks/28-deployment.md](tasks/28-deployment.md) |
-| 29 | ⬜ | Native Mobil Değerlendirme (Capacitor) | [tasks/29-native-mobile.md](tasks/29-native-mobile.md) |
+| 28 | ✅ | Netlify Deploy & CI/CD | [tasks/28-deployment.md](tasks/28-deployment.md) |
+| 29 | ✅ | Native Mobil Değerlendirme (Capacitor) | [tasks/29-native-mobile.md](tasks/29-native-mobile.md) |
 
 ---
 
