@@ -13,6 +13,7 @@ import JoinTournament from './pages/JoinTournament';
 import ScoreEntry from './pages/ScoreEntry';
 import TournamentScoreboard from './pages/TournamentScoreboard';
 import MyTournaments from './pages/MyTournaments';
+import Settings from './pages/Settings';
 
 function App() {
   useEffect(() => {
@@ -71,6 +72,14 @@ function App() {
           element={
             <ProtectedRoute>
               <MyTournaments />
+            </ProtectedRoute>
+          }
+        />
+        <Route
+          path="/settings"
+          element={
+            <ProtectedRoute>
+              <Settings />
             </ProtectedRoute>
           }
         />

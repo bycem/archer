@@ -17,7 +17,9 @@ export function ProtectedRoute({ children, role }: Props) {
   if (!session) return <Navigate to="/login" state={{ from: loc }} replace />;
   if (!profile) return <FullScreenSpinner />;
   if (!profile.profile_completed) return <Navigate to="/onboarding/profile" replace />;
-  if (role && profile.role !== role) return <Navigate to="/home" replace />;
+  if (role && profile.role !== role) {
+    return <Navigate to={profile.role === 'admin' ? '/admin' : '/home'} replace />;
+  }
 
   return <>{children}</>;
 }

@@ -171,7 +171,7 @@ supabase db push --linked
 - [ ] PR açınca preview deploy URL veriliyor
 - [ ] Custom domain SSL ile çalışıyor
 - [ ] Functions production'da çalışıyor
-- [ ] Service role key client'a sızmıyor (build output kontrolü)
+- [x] Service role key client'a sızmıyor (build output kontrolü)
 - [x] HSTS ve security header'ları aktif
 - [ ] Migration'lar production'a sorunsuz uygulanıyor
 

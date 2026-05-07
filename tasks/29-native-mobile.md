@@ -132,7 +132,7 @@ Capacitor'a geçişi kolaylaştırmak için:
 
 - [x] Tüm `localStorage` kullanımları soyutlanmalı (`storage.ts`)
 - [x] Environment URL (Supabase) `import.meta.env`'den geliyor — taşınabilir
-- [ ] Deep link şeması test edilebilir (URL'ler universal link'lere uyumlu)
+- [x] Deep link şeması test edilebilir (URL'ler universal link'lere uyumlu)
 - [ ] Auth flow OAuth redirect URI native için ayrı tutulmalı (`com.example.archery://auth/callback`)
 - [x] Camera/QR fonksiyonları interface arkasına alınmalı:
   ```ts
